@@ -159,6 +159,14 @@ body {
     color: #f5f5f5;
 }
 
+.carousel-inner {
+            padding: 20px;
+        }
+.card {
+            margin: 0 10px;
+        }
+
+
 HOVER COLONNEEEEEEEE
 
 .due-colonne {
