@@ -31,35 +31,107 @@
      <nav class="hero-menu">
     <a href="index.html"  class="hero-link">Homepage</a>
     <a href="castello.html"  class="hero-link">Il Castello</a>
-    <a href="#secondo" class="hero-link">Il Borgo</a>
-    <a href="#terzo"  class="hero-link"> Mappa</a>
-    <a href="#quarto"  class="hero-link">Eventi</a>
-    <a href="#quinto"  class="hero-link">Contatti</a>
+    <a href="borgo.html" class="hero-link">Il Borgo</a>
+    <a href="https://grazzanovisconti.com/wp-content/uploads/2018/10/GRAZ_mappa_ingresso_a4.pdf"  class="hero-link"> Mappa</a>
   </nav>
     </div>
   </div>
 </section>
-<section class="two-columns">
-  <div class="column">
-    <h2 class="colonnasinistra">Colonna Sinistra</h2>
-    <p>
-      Questo è un esempio di testo per la prima colonna. Lo stile ricorda la
-      disposizione armonica e bilanciata del sito "CSS Zen Garden", con ampio spazio
-      bianco e gerarchie tipografiche pulite.
-    </p>
-  </div>
 
-  <div class="column2">
-    <h2 class="colonnadestra">Colonna Destra</h2>
-    <p class="colonnadestra">
-      Puoi inserire descrizioni, immagini, liste o qualsiasi contenuto desideri.
-      La struttura è completamente responsiva: su mobile le due colonne diventano
-      un’unica colonna impilata.
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Colonna sinistra: CAROSELLO COMPLETO -->
+      <div class="col-lg-8 mb-4 mb-lg-0">
+        <div id="carouselCastelli" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./immagini/parco1.jpg" class="d-block carousel-fixed-img" alt="Castello 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./immagini/negozio1.jpg" class="d-block carousel-fixed-img" alt="Castello 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./immagini/parco2.jpg" class="d-block carousel-fixed-img" alt="Castello 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./immagini/parco3.jpg" class="d-block carousel-fixed-img" alt="Castello 4">
+            </div>
+            <div class="carousel-item">
+              <img src="./immagini/parco4.jpg" class="d-block carousel-fixed-img" alt="Castello 4">
+            </div>
+            <div class="carousel-item">
+              <img src="./immagini/parco5.jpg" class="d-block carousel-fixed-img" alt="Castello 4">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCastelli" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Precedente</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCastelli" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Successiva</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Colonna destra: LETTERA + TESTO allineati in alto e paralleli -->
+      <div class="col-lg-4 d-flex align-items-start">
+        <div class="castello-story">
+          <div class="story-inline">
+            <img src="./immagini/vminiata.jpg" alt="Iniziale miniata" class="miniata-img">
+            <p class="castello-text">
+              isitare il borgo di Grazzano Visconti significa ancora oggi passeggiare fra le strade di una città ideale, un’utopia nata dal sogno di un uomo, 
+              il Duca Giuseppe Visconti di Modrone (1879- 1941).
+              Il Duca progettò Grazzano Visconti come un luogo ideale in cui unire i comfort moderni con l’armonia sociale e creativa dei villaggi medievali. Ispirato dal movimento Arts and Crafts, 
+              che valorizzava l’artigianato contro la produzione industriale, realizzò un borgo in autentico stile neomedievale, sviluppato attorno al castello e pensato per favorire lavoro creativo, studio e vita comunitaria.
+              Nel borgo fece costruire strutture utili e innovative: abitazioni, un asilo, una scuola professionale artigianale, 
+              un teatro e l’Istituzione Giuseppe Visconti, dove si tenevano lezioni gratuite di igiene e tecniche agricole. Da qui partirono anche iniziative 
+              benefiche, come spedizioni contro la malaria.
+              L’artigianato locale, soprattutto in legno e ferro battuto, divenne molto apprezzato e riconoscibile come “stile Grazzano”. 
+              Il Duca intuì anche il potenziale turistico del borgo, dotandolo di hotel, ristoranti e costumi tipici per creare un’atmosfera fuori dal tempo..</p>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section class="two-columns">
+  <a href="visite.html">
+  <div class="column">
+    <h2 class="colonnasinistra">Orari Visite</h2>
+    <p>
+       <img src="./immagini/wizard.png" alt="mago" class="miniata-img">
+      Scopri gli orari del parco, del castello e del borgo
     </p>
   </div>
+</a>
+
+<a href="contatti.html">
+  <div class="column2">
+    <h2 class="colonnadestra">Info e Contatti</h2>
+    <p class="colonnadestra">
+      <img src="./immagini/writing.png" alt="scrivere" class="miniata-img">
+      Scopri le info sul borgo e come raggiungerci
+    </p>
+  </div>
+  </a>
 </section>
 
+
+
 <div class="container mt-5">
+    
+    <h2>Scopri i nostri eventi</h2>
+
     <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -67,40 +139,24 @@
                     <div class="card" style="width: 200px;">
                         <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 1">
                         <div class="card-body">
-                            <h5 class="card-title">Card 1</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
+                            <h5 class="card-title">Natale</h5>
+                            <p class="card-text">8 novembre - 6 gennaio</p>
                             <a href="#" class="btn btn-primary">Vai</a>
                         </div>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 2">
                         <div class="card-body">
-                            <h5 class="card-title">Card 2</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
+                            <h5 class="card-title">Halloween</h5>
+                            <p class="card-text">31 ottobre - dalle 17 fino a notte fonda</p>
                             <a href="#" class="btn btn-primary">Vai</a>
                         </div>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 3">
                         <div class="card-body">
-                            <h5 class="card-title">Card 3</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
-                            <a href="#" class="btn btn-primary">Vai</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 200px;">
-                        <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 4</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
-                            <a href="#" class="btn btn-primary">Vai</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 200px;">
-                        <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 5</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
+                            <h5 class="card-title">Grazzano Wine</h5>
+                            <p class="card-text">11 e 12 ottobre dalle 11 alle 20</p>
                             <a href="#" class="btn btn-primary">Vai</a>
                         </div>
                     </div>
@@ -111,40 +167,24 @@
                     <div class="card" style="width: 200px;">
                         <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 6">
                         <div class="card-body">
-                            <h5 class="card-title">Card 6</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
+                            <h5 class="card-title">Vampiria</h5>
+                            <p class="card-text">4 e 5 ottobre dalle 11 alle 23</p>
                             <a href="#" class="btn btn-primary">Vai</a>
                         </div>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 7">
                         <div class="card-body">
-                            <h5 class="card-title">Card 7</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
+                            <h5 class="card-title">Visita il Parco</h5>
+                            <p class="card-text">Scopri gli orari</p>
                             <a href="#" class="btn btn-primary">Vai</a>
                         </div>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 8">
                         <div class="card-body">
-                            <h5 class="card-title">Card 8</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
-                            <a href="#" class="btn btn-primary">Vai</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 200px;">
-                        <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 9">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 9</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
-                            <a href="#" class="btn btn-primary">Vai</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 200px;">
-                        <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Immagine 10">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 10</h5>
-                            <p class="card-text">Testo di esempio per costruire il contenuto della card.</p>
+                            <h5 class="card-title">Visita il Castello</h5>
+                            <p class="card-text">Scopri gli orari</p>
                             <a href="#" class="btn btn-primary">Vai</a>
                         </div>
                     </div>

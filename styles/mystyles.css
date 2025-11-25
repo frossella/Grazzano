@@ -3,6 +3,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
   }
 
+a:hover {
+    color:green !important;
+}
+
   .hero {
     position: relative;
     height: 60vh;
@@ -17,6 +21,16 @@ body {
     position: relative;
     height: 60vh;
     background: url('../immagini/castello1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: white;
+  }
+
+  .heroborgo {
+    position: relative;
+    height: 60vh;
+    background: url('../immagini/borgo1.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     padding: 60px;
@@ -83,7 +97,8 @@ body {
   /* menu orizzontale */
 .hero-menu {
   display: flex;
-  gap: 30px;          /* distanza tra le voci */
+  gap: 60px;  /* distanza tra le voci */
+
 }
 
 /* stile link */
@@ -167,6 +182,8 @@ body {
         }
 
 
+
+
 HOVER COLONNEEEEEEEE
 
 .due-colonne {
@@ -222,6 +239,509 @@ HOVER COLONNEEEEEEEE
     justify-content: space-around;
 }
 
+/*CASTELLO*/
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.page-wrapper .container {
+  max-width: 1300px;
+}
+
+/* carosello */
+#carouselCastelli {
+  width: 100%;
+}
+
+#carouselCastelli .carousel-inner {
+  height: 75vh;
+  max-height: 780px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.carousel-fixed-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* colonna destra centrata verticalmente rispetto alla riga */
+.col-lg-4.d-flex {
+  height: 100%;
+}
+
+/* blocco storia */
+.castello-story {
+  color: rgb(92,107,42);
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* immagine miniata affiancata al testo */
+.story-inline {
+  display: flex;
+  align-items: flex-start;
+}
+
+.miniata-img {
+  max-width: 80px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.castello-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0;
+}
+
+
+
+
+/* VISITE */
+
+:root {
+  --bg-page: #f5fdf7;        /* bianco leggermente caldo */
+  --bg-hero: rgb(92,107,42);        /* verde principale */
+  --bg-card: #ffffff;
+  --accent: rgb(92,107,42);         /* verde più acceso per bordi/link */
+  --text-main: #113322;
+  --text-light: #f7fff9;
+  --border-soft: #cde9d6;
+}
+
+/* reset semplice */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bodyvisite {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* HERO */
+
+.herovisite {
+  background: var(--bg-hero);
+  color: var(--text-light);
+  padding: 32px 16px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.hero-subtitlevisite {
+  max-width: 650px;
+  font-size: 1rem;
+}
+
+/* CONTENUTO PRINCIPALE */
+
+.page {
+  max-width: 1100px;
+  margin: 24px auto 40px;
+  padding: 0 16px;
+}
+
+/* BOX RIASSUNTIVO CON IMMAGINE */
+
+.info-box {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr);
+  gap: 20px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+.info-text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.info-text p {
+  text-align: justify;
+}
+
+.info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* INDICE (TOC) */
+
+.toc {
+  background: #e2f4e8;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+.toc h2 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.toc ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.toc a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* SEZIONI */
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.section p {
+  text-align: justify;
+  margin-bottom: 14px;
+}
+
+/* GRIGLIA E CARD */
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  padding: 16px 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  text-align: justify;
+}
+
+/* LISTE ORARI / TARIFFE */
+
+.orari-list {
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.orari-list li {
+  padding: 3px 0;
+  border-bottom: 1px dashed #d7e9dd;
+}
+
+.orari-list li:last-child {
+  border-bottom: none;
+}
+
+/* LINK */
+
+a {
+  color: var(--accent);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .info-box {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* INFORMAZIONI */
+
+:root {
+  --bg-page: #f5fdf7;
+  --bg-hero: #0b6b3a;
+  --bg-card: #ffffff;
+  --accent: #0f8f4a;
+  --text-main: #113322;
+  --text-light: #f7fff9;
+  --border-soft: #cde9d6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bodyinfo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* HERO */
+
+.heroinfo {
+  background: var(--bg-hero);
+  color: var(--text-light);
+  padding: 32px 16px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  max-width: 650px;
+  font-size: 1rem;
+}
+
+/* CONTENUTO */
+
+.pageinfo {
+  max-width: 1100px;
+  margin: 24px auto 40px;
+  padding: 0 16px;
+}
+
+/* BOX RIASSUNTIVO */
+
+.info-box {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr);
+  gap: 20px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+.info-text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.info-text p {
+  text-align: justify;
+}
+
+.info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* INDICE */
+
+.toc {
+  background: #e2f4e8;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+.toc h2 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.toc ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.toc a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* SEZIONI */
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.section p {
+  text-align: justify;
+  margin-bottom: 14px;
+}
+
+/* GRIGLIA E CARD */
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  padding: 16px 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card-full {
+  margin-top: 18px;
+}
+
+/* LISTE */
+
+.orari-list {
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.orari-list li {
+  padding: 3px 0;
+  border-bottom: 1px dashed #d7e9dd;
+}
+
+.orari-list li:last-child {
+  border-bottom: none;
+}
+
+.note {
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+/* LINK */
+
+a {
+  color: var(--accent);
+}
+
+/* FOOTER */
+
+.footer {
+  background: #0b331e;
+  color: var(--text-light);
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .info-box {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+}
 
 /* Responsivo per mobile */
 @media (max-width: 900px) {
@@ -230,4 +750,6 @@ HOVER COLONNEEEEEEEE
     padding: 50px 30px;
   }
 }
+
+
 
