@@ -22,7 +22,7 @@ body {
 
 a {
   color: var(--color-primary);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -166,6 +166,10 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 0;
   margin-bottom: 60px;
+}
+
+.two-columns a{
+  color: #333333 !important;
 }
 
 .column {
