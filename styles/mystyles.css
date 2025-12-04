@@ -468,6 +468,89 @@ a:hover {
   transform: scale(1.1);
 }
 
+/* CAROSELLO NATALE */
+
+.evento-box {
+  max-width: 1100px;      /* larghezza del riquadro */
+  margin: 40px auto;      /* centra orizzontalmente */
+  padding: 24px;
+  border: 1px solid #d1c2a3;
+  background-color: #f7f1e6; /* simile al beige del volantino */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.evento-contenuto {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.evento-carousel,
+.evento-testo {
+  flex: 1;
+}
+
+/* Stile base del testo a destra */
+.evento-testo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Georgia", serif;
+  text-align: left;
+}
+
+.evento-testo h2 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.evento-testo p {
+  margin: 4px 0;
+}
+
+/* Responsive: sotto i 768px il carosello va sopra il testo */
+@media (max-width: 768px) {
+  .evento-contenuto {
+    flex-direction: column;
+  }
+}
+.bodynatale {
+  margin: 0;
+  min-height: 100vh;                 /* copre tutta l’altezza della finestra */
+  background-image: url("../immagini/neve.gif");  /* tua GIF */
+  background-repeat: no-repeat;      /* evita ripetizioni */
+  background-size: cover;            /* riempie tutto lo schermo */
+  background-position: center center;/* centra l’immagine */
+}
+
+.bodyhalloween {
+  margin: 0;
+  min-height: 100vh;                 /* copre tutta l’altezza della finestra */
+  background-image: url("../immagini/candele.gif");  /* tua GIF */
+  background-repeat: no-repeat;      /* evita ripetizioni */
+  background-size: cover;            /* riempie tutto lo schermo */
+  background-position: center center;/* centra l’immagine */
+}
+
+.bodywine {
+  margin: 0;
+  min-height: 100vh;                 /* copre tutta l’altezza della finestra */
+  background-image: url("../immagini/vino.jpg");  /* tua GIF */
+  background-repeat: no-repeat;      /* evita ripetizioni */
+  background-size: cover;            /* riempie tutto lo schermo */
+  background-position: center center;/* centra l’immagine */
+}
+
+.bodyvampiria {
+  margin: 0;
+  min-height: 100vh;                 /* copre tutta l’altezza della finestra */
+  background-image: url("../immagini/vampiria.gif");  /* tua GIF */
+  background-repeat: no-repeat;      /* evita ripetizioni */
+  background-size: cover;            /* riempie tutto lo schermo */
+  background-position: center center;/* centra l’immagine */
+}
+
 @media (max-width: 900px) {
   .two-columns {
     grid-template-columns: 1fr;
