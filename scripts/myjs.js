@@ -105,3 +105,50 @@ document.addEventListener('DOMContentLoaded', function() {
   applicaTema(temaAttuale);
   inizializzaSelettoreTema();
 });
+
+function initLanguageSwitch() {
+  const langButtons = document.querySelectorAll('.lang-btn');
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+
+      // pagina corrente (senza query/anchor)
+      const path = window.location.pathname;
+      const file = path.split('/').pop() || 'index.html';
+
+      // mappa file IT -> EN
+      const map = {
+        'index.html': 'indexeng.html',
+        'castello.html': 'castelloeng.html',
+        'borgo.html': 'borgoeng.html',
+        'visite.html': 'visiteeng.html',
+        'contatti.html': 'contattieng.html'
+      };
+
+      const reverseMap = Object.fromEntries(
+        Object.entries(map).map(([it, en]) => [en, it])
+      );
+
+      let target = file;
+
+      if (lang === 'en') {
+        // se sei nella versione IT, passa alla corrispondente ENG
+        target = map[file] || file;
+      } else {
+        // se sei nella versione ENG, passa alla corrispondente IT
+        target = reverseMap[file] || file;
+      }
+
+      if (target !== file) {
+        window.location.href = target;
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const temaAttuale = caricaTemaPreferito();
+  applicaTema(temaAttuale);
+  inizializzaSelettoreTema();
+  initLanguageSwitch();   // <--- aggiungi questa riga
+});
